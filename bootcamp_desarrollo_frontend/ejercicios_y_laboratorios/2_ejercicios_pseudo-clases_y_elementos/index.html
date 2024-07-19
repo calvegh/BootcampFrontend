@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio pseudo-clases</title>
+    <style>
+        ul{
+            list-style-type:none;
+            max-width:400px;
+            margin:auto;
+        }
+        li{
+            border: 1px solid lightcoral;
+            border-radius:5px;
+            padding:10px;
+            margin-bottom:10px;
+        }
+        li::before{
+            content:"📰 ";
+            font-size:20px;
+            margin-right:5px;
+        }
+        li:hover{
+            background-color:lightcyan;
+            cursor:pointer;
+        }
+        li:first-child{
+            font-weight: bold;
+        }
+
+        li:last-child{
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>Noticia 1: Importante</li>
+        <li>Noticia 2: Reciente</li>
+        <li>Noticia 3: Relevante</li>
+        <li>Noticia 4: Última actualización</li>
+        </ul>
+    </body>
+</html>

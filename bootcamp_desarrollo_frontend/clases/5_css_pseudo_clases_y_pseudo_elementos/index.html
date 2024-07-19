@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo clases y pseudo elementos</title>
+    <style>
+        .contenedor {
+            border:1px solid black;
+            border-radius: 10px;
+            margin-bottom: 5px;
+        }
+        li:nth-child(2) a,
+        li:nth-child(4) a{
+            color:red
+        }
+        p:not(.highlight){
+            color:gray
+        }
+        #pares p:nth-child(odd){
+            color:green
+        }
+        #pseudo-elemento p::before{
+            content: "Nota: ";
+            color:red;
+            font-weight: bold;
+        }
+        #pseudo-elemento-2 p::first-letter{
+            font-size: 20px;
+            color:green
+        }
+        #pseudo-elemento-2 p::first-line{
+            font-weight: bold;
+            color:purple
+        }
+    </style>
+</head>
+<body >
+    <div class="contenedor">
+    <ol>
+        <li><a href="#">Enlace</a></li>
+        <li><a href="#">Enlace</a></li>
+        <li><a href="#">Enlace</a></li>
+        <li><a href="#">Enlace</a></li>
+        <li><a href="#">Enlace</a></li>
+    </ol>
+</div>
+    <div class="contenedor">
+        <p>Text normal</p>
+        <p class="highlight">Texto resaltado</p>
+        <p>Otro texto normal</p>
+    </div>
+    <div id="pares" class="contenedor">
+        <p>Texto impar</p>
+        <p>Texto par</p>
+        <p>Otro impar</p>
+        <p>Texto par</p>
+        <p>Texto impar</p>
+    </div>
+    <div id="pseudo-elemento" class="contenedor">
+        <p>Este es un parrafo ejemplo</p>
+    </div>
+    <div id="pseudo-elemento-2"class="contenedor">
+        <p>Este es un parrafo de ejemplo asi como podrian exsitr muchos Este es un parrafo de ejemplo asi como podrian exsitr muchos</p>
+    </div>
+</body>
+</html>
