@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            border:1px solid #1f3459;
+            border-radius: 30px;
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            background-color: #b4c7e7;   
+            flex:1;
+        }
+        .dado{
+            border:1px solid #3961a8;
+            background-color: #4472c4;
+            border-radius: 15px;
+            margin: 10px;
+            padding: 12px;
+            display: flex;
+            flex:1;
+            aspect-ratio: 1;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .dado:first-child{
+            justify-content: center;
+            align-items: center;
+        }
+        .linea{
+            display: flex;
+            justify-content: space-between;
+        }
+        .bola{
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background-color: black;
+        }
+        .center{
+            align-self: center;
+        }
+        .end{
+            align-self: end;
+        }
+        .dice-row{
+            display: flex;
+            flex:2;
+            margin: 5px;
+            justify-content: space-around;
+            height: 60px;
+        }
+        .hide{
+            background-color: transparent;
+            border: none;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="dice-row">
+            <div class="dado">
+                <div class="linea">
+                    <div class="bola"></div>
+                </div>
+            </div>
+            <div class="dado">
+                <div class="linea">
+                    <div class="bola"></div>
+                </div>
+                <div class="linea end">
+                    <div class="bola"></div>
+                </div>
+            </div>
+            <div class="dado">
+                <div class="linea">
+                    <div class="bola"></div>
+                </div>
+                <div class="linea center">
+                    <div class="bola"></div>
+                </div>
+                <div class="linea end">
+                    <div class="bola"></div>
+                </div>
+            </div>
+            <div class="dado">
+                <div class="linea">
+                    <div class="bola"></div>
+                    <div class="bola"></div>
+                </div>
+                <div class="linea">
+                    <div class="bola"></div>
+                    <div class="bola"></div>
+                </div>
+            </div>
+            <div class="dado">
+                <div class="linea">
+                    <div class="bola"></div>
+                    <div class="bola"></div>
+                </div>
+                <div class="linea center">
+                    <div class="bola"></div>
+                </div>
+                <div class="linea">
+                    <div class="bola"></div>
+                    <div class="bola"></div>
+                </div>
+            </div>
+            <div class="dado">
+                <div class="linea">
+                    <div class="bola"></div>
+                    <div class="bola"></div>
+                </div>
+                <div class="linea">
+                    <div class="bola"></div>
+                    <div class="bola"></div>
+                </div>
+                <div class="linea">
+                    <div class="bola"></div>
+                    <div class="bola"></div>
+                </div>
+            </div>
+        </div>
+        <div class="dice-row">
+            <div class="dado hide">
+                <div class="linea">
+                    <div class="bola hide"></div>
+                </div>
+            </div>
+            <div class="dado hide">
+                <div class="linea">
+                    <div class="bola hide"></div>
+                </div>
+                <div class="linea end">
+                    <div class="bola hide"></div>
+                </div>
+            </div>
+            <div class="dado hide">
+                <div class="linea">
+                    <div class="bola hide"></div>
+                </div>
+                <div class="linea center">
+                    <div class="bola hide"></div>
+                </div>
+                <div class="linea end">
+                    <div class="bola hide"></div>
+                </div>
+            </div>
+            <div class="dado hide">
+                <div class="linea">
+                    <div class="bola hide"></div>
+                    <div class="bola hide"></div>
+                </div>
+                <div class="linea">
+                    <div class="bola hide"></div>
+                    <div class="bola hide"></div>
+                </div>
+            </div>
+            <div class="dado hide">
+                <div class="linea">
+                    <div class="bola hide"></div>
+                    <div class="bola hide"></div>
+                </div>
+                <div class="linea center">
+                    <div class="bola  hide"></div>
+                </div>
+                <div class="linea">
+                    <div class="bola hide"></div>
+                    <div class="bola hide"></div>
+                </div>
+            </div>
+            <div class="dado hide">
+                <div class="linea">
+                    <div class="bola hide"></div>
+                    <div class="bola hide"></div>
+                </div>
+                <div class="linea">
+                    <div class="bola hide"></div>
+                    <div class="bola hide"></div>
+                </div>
+                <div class="linea">
+                    <div class="bola hide"></div>
+                    <div class="bola hide"></div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    
+</body>
+</html>
