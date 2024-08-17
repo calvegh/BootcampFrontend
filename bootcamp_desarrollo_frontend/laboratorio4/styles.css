@@ -1,0 +1,70 @@
+* {
+    font-family: Arial, sans-serif;
+
+}
+body{
+    background-color: black;
+}
+#controles{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    align-self: end;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    align-self: center;
+}
+
+.button-control{
+    margin-left: 2px;
+    margin-right: 2px;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: blue;
+    border-radius: 8px;
+    border: none;
+    color: white;
+    font-weight: bold;
+}
+.button-control[disabled]{
+    background-color:rgb(10, 41, 180);
+    color:gray
+}
+#paginador{
+    font-weight: bold;
+    font-style: italic;
+    margin-left: 5px;
+    width: 75px;
+}
+#main-section{
+    margin-top: 30px;
+    margin-bottom:50px;
+    height: 80%;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px solid black;
+    padding: 0px 40px 25px 40px;
+    border-radius: 10px;
+    background-color: white;
+    height: 115vh;
+    max-width: 60%;
+    margin: auto;
+    box-shadow: 0 0 20px 10px rgb(255, 255, 255,0.5);
+    margin-top:20px;
+    margin-bottom:20px;
+}
+.card-post{
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 8px;
+    margin-bottom: 8px;
+    box-shadow: 10px 10px 5px rgb(0,0,0,0.15)
+}
+#lista-posts{
+    margin-bottom: 10px;
+}
