@@ -1,19 +1,31 @@
 {
   "posts": [
     {
-      "id": 1,
+      "id": "1",
       "title": "json-server",
       "author": "typicode"
+    },
+    {
+      "id": "1516",
+      "title": "foo",
+      "body": "bar",
+      "userId": 1
+    },
+    {
+      "id": "f3c8",
+      "title": "fooa",
+      "body": "bara",
+      "userId": 1
     }
   ],
   "comments": [
     {
-      "id": 1,
+      "id": "1",
       "body": "some comment",
       "postId": 1
     },
     {
-      "id": 2,
+      "id": "2",
       "body": "some commenta",
       "postId": 1
     },
@@ -32,11 +44,11 @@
   },
   "users": [
     {
-      "id": 1,
+      "id": "1",
       "name": "John Doe"
     },
     {
-      "id": 2,
+      "id": "2",
       "name": "Jane Doe"
     }
   ]
