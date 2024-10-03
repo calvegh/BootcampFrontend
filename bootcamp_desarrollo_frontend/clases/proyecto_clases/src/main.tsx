@@ -8,6 +8,7 @@ import { Provider } from "react-redux";
 import { store } from "./states/store.ts";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { UsersPage } from "./page/UsersPage.tsx";
+import { GestionUsuarios } from "./page/GestionUsuarios.tsx";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
@@ -16,6 +17,7 @@ createRoot(document.getElementById("root")!).render(
         <Routes>
           {/* <HomePage /> */}
           <Route path="users" element={<UsersPage />} />
+          <Route path="gestion" element={<GestionUsuarios />} />
         </Routes>
         {/* <PostPage /> */}
       </BrowserRouter>
