@@ -1,0 +1,6 @@
+name: curso-react
+services:
+  frontend:
+    image: calvegh337/laboratorio-5:cv
+    ports:
+      - 80:80

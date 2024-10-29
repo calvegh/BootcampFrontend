@@ -9,6 +9,8 @@ import { store } from "./states/store.ts";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { UsersPage } from "./page/UsersPage.tsx";
 import { GestionUsuarios } from "./page/GestionUsuarios.tsx";
+import { AuthPage } from "./page/AuthPage.tsx";
+import { LoginPage } from "./page/LoginPage.tsx";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
@@ -18,6 +20,8 @@ createRoot(document.getElementById("root")!).render(
           {/* <HomePage /> */}
           <Route path="users" element={<UsersPage />} />
           <Route path="gestion" element={<GestionUsuarios />} />
+          <Route path="auth" element={<AuthPage />} />
+          <Route path="login" element={<LoginPage />} />
         </Routes>
         {/* <PostPage /> */}
       </BrowserRouter>
