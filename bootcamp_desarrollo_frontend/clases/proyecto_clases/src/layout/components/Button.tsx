@@ -1,6 +1,6 @@
 import { useDispatch, useSelector } from "react-redux";
 import { RootType } from "../../states/store";
-import { decrement, increment, increment_2 } from "../../states/slice";
+import { decrement, increment, increment_2 } from "../../states/counterSlice";
 
 export function Button() {
   const counterState = useSelector((state: RootType) => state.counter);
