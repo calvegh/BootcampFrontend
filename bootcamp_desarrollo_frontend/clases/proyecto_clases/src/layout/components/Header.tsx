@@ -11,7 +11,9 @@ export const Header = () => {
           <Link to="/users">Usuarios</Link>
         </li>
         <li></li>
-        <li></li>
+        <li>
+          <Link to="/auth">Autorizacion</Link>
+        </li>
         <li>
           <Link to="/admin">Administrador</Link>
         </li>

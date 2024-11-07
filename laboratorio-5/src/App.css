@@ -1,0 +1,121 @@
+* {
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* Form container */
+form {
+  width: 500px;
+  margin: auto;
+  border: 2px solid gray;
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: 0px 0px 13px;
+}
+
+/* Headings */
+h2 {
+  color: #333333;
+}
+
+/* Labels */
+label {
+  margin-top: 20px;
+  margin-left: 10px;
+  font-weight: bold;
+}
+
+label:not(.terms) {
+  width: 100%;
+  display: block;
+  margin-bottom: 2px;
+}
+
+/* Input fields (general) */
+input:not(.terms) {
+  border: 1px solid gray;
+  border-radius: 3px;
+  width: 90%;
+  display: block;
+  height: 30px;
+  padding: 10px;
+  margin-left: 10px;
+}
+
+input:focus {
+  outline: none;
+  border: 2px solid #027bff;
+}
+
+/* Select dropdown */
+select {
+  width: 85%;
+  background-color: white;
+  height: 30px;
+  border-radius: 5px;
+  border: 1px solid gray;
+  margin-left: 10px;
+}
+
+/* Buttons */
+button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #027bff;
+  color: white;
+}
+
+/* Specific input types */
+input[type='color'] {
+  width: 85%;
+}
+
+input[type='range'] {
+  accent-color: #767676;
+}
+
+/* Number input specifics */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Radio button container */
+.radio-container {
+  margin-bottom: 10px;
+}
+
+.radio-container label {
+  width: auto;
+  height: auto;
+  display: inline;
+  margin: auto;
+}
+
+.radio-container input {
+  width: auto;
+  height: auto;
+  display: inline;
+}
+
+/* Terms checkbox */
+.terms {
+  margin-bottom: 10px;
+  margin-left: 0px;
+}
+
+#terms {
+  margin-left: 10px;
+}
